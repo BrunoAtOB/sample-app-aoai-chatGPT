@@ -11,20 +11,6 @@ This repo contains sample code for a simple chat webapp that integrates with Azu
   - Pinecone index (preview)
   - AzureML index (preview)
 
-## Deploy the app
-
-### Deploy with Azure Developer CLI
-Please see [README_azd.md](./README_azd.md) for detailed instructions.
-
-### One click Azure deployment
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fsample-app-aoai-chatGPT%2Fmain%2Finfrastructure%2Fdeployment.json)
-
-Click on the Deploy to Azure button and configure your settings in the Azure Portal as described in the [Environment variables](#environment-variables) section.
-
-Please see the [section below](#add-an-identity-provider) for important information about adding authentication to your app.
-
-### Deploy from your local machine
-
 #### Local Setup: Basic Chat Experience
 1. Copy `.env.sample` to a new file called `.env` and configure the settings as described in the [Environment variables](#environment-variables) section.
     
@@ -227,20 +213,6 @@ Note: settings starting with `AZURE_SEARCH` are only needed when using Azure Ope
 |UI_CHAT_DESCRIPTION|This chatbot is configured to answer your questions| Description (chat window)
 |UI_FAVICON|| Defaults to Contoso favicon. Configure the URL to your favicon to modify.
 |UI_SHOW_SHARE_BUTTON|True|Share button (right-top)
-
-## Contributing
-
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
-
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 ## Trademarks
 
