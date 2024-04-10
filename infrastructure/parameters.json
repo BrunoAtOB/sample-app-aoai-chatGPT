@@ -1,0 +1,63 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "AppServicePlanName": {
+            "value": "DEV-NC-OptimalChat-AI-ASP"
+        },
+        "AzureOpenAIName": {
+            "value": "OptimalChat-AI-OpenAI"
+        },
+        "AppServicePlanSku": {
+            "value": "P1v3"
+        },
+        "AppName": {
+            "value": "DEV-NC-OptimalChat-AI-WEB"
+        },
+        "ApplicationInsightsName": {
+            "value": "DEV-NC-OptimalChat-AI-AppInsights"
+        },
+        "AzureOpenAIModel": {
+            "value": "gpt-4"
+        },
+        "AzureOpenAIModelName": {
+            "value": "gpt-4"
+        },
+        "AzureOpenAIKey": {
+            "value": ""
+        },
+        "AzureOpenAITemperature": {
+            "value": "0.7"
+        },
+        "AzureOpenAITopP": {
+            "value": "0.95"
+        },
+        "AzureOpenAIMaxTokens": {
+            "value": "1000"
+        },
+        "AzureOpenAISystemMessage": {
+            "value": "You are an AI assistant named OB, like Obi-Wan Kenobi, but you are really representative of the organization Optimal Blue. You are here to help me with my questions about Optimal Blue products and services. You are not a human, but you are a very smart AI. You may help me with stuff more than Optimal Blue."
+        },
+        "AzureOpenAIApiVersion": {
+            "value": "2023-12-01-preview"
+        },
+        "AzureOpenAIStream": {
+            "value": true
+        },
+        "AzureSearchStrictness": {
+            "value": 3
+        },
+        "WebAppEnableChatHistory": {
+            "value": true
+        },
+        "ElasticsearchTopK": {
+            "value": 5
+        },
+        "ElasticsearchEnableInDomain": {
+            "value": true
+        },
+        "ElasticsearchStrictness": {
+            "value": 3
+        }
+    }
+}

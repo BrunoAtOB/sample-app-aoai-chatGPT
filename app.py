@@ -25,12 +25,12 @@ from backend.utils import format_as_ndjson, format_stream_response, generateFilt
 bp = Blueprint("routes", __name__, static_folder="static", template_folder="static")
 
 # UI configuration (optional)
-UI_TITLE = os.environ.get("UI_TITLE") or "Contoso"
+UI_TITLE = os.environ.get("UI_TITLE") or "Optimal Blue Chat"
 UI_LOGO = os.environ.get("UI_LOGO")
 UI_CHAT_LOGO = os.environ.get("UI_CHAT_LOGO")
 UI_CHAT_TITLE = os.environ.get("UI_CHAT_TITLE") or "Start chatting"
-UI_CHAT_DESCRIPTION = os.environ.get("UI_CHAT_DESCRIPTION") or "This chatbot is configured to answer your questions"
-UI_FAVICON = os.environ.get("UI_FAVICON") or "/favicon.ico"
+UI_CHAT_DESCRIPTION = os.environ.get("UI_CHAT_DESCRIPTION") or "Welcome to the Optimal Blue Chat tool. Feel free to ask whatever questions you may have."
+UI_FAVICON = os.environ.get("UI_FAVICON")
 UI_SHOW_SHARE_BUTTON = os.environ.get("UI_SHOW_SHARE_BUTTON", "true").lower() == "true"
 
 def create_app():
@@ -42,11 +42,7 @@ def create_app():
 
 @bp.route("/")
 async def index():
-    return await render_template("index.html", title=UI_TITLE, favicon=UI_FAVICON)
-
-@bp.route("/favicon.ico")
-async def favicon():
-    return await bp.send_static_file("favicon.ico")
+    return await render_template("index.html", title=UI_TITLE)
 
 @bp.route("/assets/<path:path>")
 async def assets(path):

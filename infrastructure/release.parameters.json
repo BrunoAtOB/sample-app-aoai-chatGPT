@@ -1,0 +1,63 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "AppServicePlanName": {
+            "value": "__AppServicePlanName__"
+        },
+        "AzureOpenAIName": {
+            "value": "__AzureOpenAIName__"
+        },
+        "AppServicePlanSku": {
+            "value": "__AppServicePlanSku__"
+        },
+        "AppName": {
+            "value": "__AppName__"
+        },
+        "ApplicationInsightsName": {
+            "value": "__ApplicationInsightsName__"
+        },
+        "AzureOpenAIModel": {
+            "value": "__AzureOpenAIModel__"
+        },
+        "AzureOpenAIModelName": {
+            "value": "__AzureOpenAIModelName__"
+        },
+        "AzureOpenAIKey": {
+            "value": "__AzureOpenAIKey__"
+        },
+        "AzureOpenAITemperature": {
+            "value": "__AzureOpenAITemperature__"
+        },
+        "AzureOpenAITopP": {
+            "value": "__AzureOpenAITopP__"
+        },
+        "AzureOpenAIMaxTokens": {
+            "value": "__AzureOpenAIMaxTokens__"
+        },
+        "AzureOpenAISystemMessage": {
+            "value": "__AzureOpenAISystemMessage__"
+        },
+        "AzureOpenAIApiVersion": {
+            "value": "__AzureOpenAIApiVersion__"
+        },
+        "AzureOpenAIStream": {
+            "value": __AzureOpenAIStream__
+        },
+        "AzureSearchStrictness": {
+            "value": __AzureSearchStrictness__
+        },
+        "WebAppEnableChatHistory": {
+            "value": __WebAppEnableChatHistory__
+        },
+        "ElasticsearchTopK": {
+            "value": __ElasticsearchTopK__
+        },
+        "ElasticsearchEnableInDomain": {
+            "value": __ElasticsearchEnableInDomain__
+        },
+        "ElasticsearchStrictness": {
+            "value": __ElasticsearchStrictness__
+        }
+    }
+}
